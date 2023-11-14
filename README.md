@@ -1,1 +1,1 @@
-# llms_IA
+# Sinapsis_IA
