@@ -9,7 +9,6 @@ from langchain.tools import tool
 import os
 import pinecone
 
-
 @tool("SayHello", return_direct=True)
 def say_hello(name: str) -> str:
     """Answer when someone says hello"""
@@ -21,29 +20,29 @@ def main():
     embeddings = OpenAIEmbeddings()
     text = open("economia.txt", "r")
     #print(text.read())
-    pinecone.create_index("eci", dimension=1536, metric="cosine")
+    pinecone.create_index("challenge1", dimension=1536, metric="cosine")
 
-    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='eci')
+    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='challenge1')
     text = open("economia.txt", "r")
     print(text)
 
-    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='eci')
+    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='challenge1')
     text = open("ingenieria-civil.txt", "r")
     print(text)
 
-    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='eci')
+    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='challenge1')
     text = open("ingenieria-electrica.txt", "r")
     print(text)
 
-    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='eci')
+    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='challenge1')
     text = open("ingenieria-electronica.txt", "r")
     print(text)
 
-    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='eci')
+    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='challenge1')
     text = open("ingenieria-industrial.txt", "r")
     print(text)
 
-    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='eci')
+    data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name='challenge1')
     text = open("ingenieria-sistemas.txt", "r")
     print(text)
 
@@ -60,10 +59,10 @@ def main():
     print(agent.run("Hello! My name is RiCHi"))
 
 def buscar():
-    pinecone.init(api_key="9b25e44a-09e8-4d87-b909-4db6318ae572", environment="gcp-starter")
+    pinecone.init(api_key="PINECONE_API_KEY", environment="PINECONE_ENVIRONMENT")
     embeddings = OpenAIEmbeddings()
     # if you already have an index, you can load it like this
-    docsearch = Pinecone.from_existing_index("eci", embeddings)
+    docsearch = Pinecone.from_existing_index("challenge1", embeddings)
     query = "Cuantos años de acreditación tiene ingeniería de industrial?"
     docs = docsearch.similarity_search(query)
     print(docs)
