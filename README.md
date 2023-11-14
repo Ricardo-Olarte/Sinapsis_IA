@@ -10,11 +10,15 @@ ________________________________________________________________________________
   - Python
   - Consola, preferencia Windows (No ensayado en linux)
   - IDLE de python, recomendación Pycharm
+  - Pinecone, crear un AI Agent index
 
 ___________________________________________________________________________________
 ### Instalación
 
 1. Clonamos el repositorio y accedemos desde la consola:
+```
+https://github.com/Ricardo-Olarte/Sinapsis_IA.git
+```
 ```
 cd Sinapsis_IA
 ```
@@ -52,4 +56,15 @@ $env:PINECONE_API_KEY = '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'
 ```
 $env:PINECONE_ENVIRONMENT = 'gcp-starter'
 ```
-4. 
+4. Con el tool configurado podemos consultar los documentos, y así mismo, que nuestro agente 'challenge1' pueda respondernos
+
+___________________________________________________________________________________
+### Elaborado por:
+
+* Jose Ricardo Olarte Pardo
+
+___________________________________________________________________________________
+### Autores:
+
+* David Esteban Useche
+* Santiago Velez
