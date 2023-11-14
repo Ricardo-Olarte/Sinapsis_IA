@@ -12,6 +12,7 @@ ________________________________________________________________________________
   - IDLE de python, recomendación Pycharm
   - Pinecone, crear un AI Agent index
 
+![pinecone](https://github.com/Ricardo-Olarte/Sinapsis_IA/blob/main/ScreenShots/Pinecone.png)
 ___________________________________________________________________________________
 ### Instalación
 
@@ -58,6 +59,12 @@ $env:PINECONE_ENVIRONMENT = 'gcp-starter'
 ```
 4. Con el tool configurado podemos consultar los documentos, y así mismo, que nuestro agente 'challenge1' pueda respondernos
 
+Nota: Código en base del profesor Luis Benavides
+![buscar](https://github.com/Ricardo-Olarte/Sinapsis_IA/blob/main/ScreenShots/Buscar.png)
+![tool](https://github.com/Ricardo-Olarte/Sinapsis_IA/blob/main/ScreenShots/Tool.png)
+
+Documentos:
+![documentos](https://github.com/Ricardo-Olarte/Sinapsis_IA/blob/main/ScreenShots/Documentos.png)
 ___________________________________________________________________________________
 ### Elaborado por:
 
